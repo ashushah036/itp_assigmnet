@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    cin>>N;
+    
+    int a[N],min=0,count=0,temp=0;
+    
+    for(int i=0;i<N;i++){
+        cin>>a[i];
+    }
+    
+    for(int i=0;i<N-1;i++){
+        min=a[i];
+        count=0,temp=0;
+        for(int j=i+1;j<N;j++){
+            if(min>a[j]){
+                min=a[j];
+                count=j;
+           }   
+        }
+        if(count!=0){
+            temp=a[i];
+            a[i]=min;
+            a[count]=temp;
+        }
+    }
+    
+    for(int k=0;k<N;k++){
+        cout<<a[k]<<" ";
+    }
+    
+    return 0;
+}
