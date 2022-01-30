@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+struct college{
+    char ccode[2];
+    char cname[100];
+    int yoe;
+    int nocourse;
+    
+    struct course{
+        char course_name[100];
+        float dur;
+        int nostudents;
+    }details;
+    
+}entry;
+
+int main() {
+    struct course details;
+    printf("\t \t \t \t \t \t \t \t**COLLEGE DETAILS**\n");
+    printf("\n");
+    
+    scanf("%s",&entry.ccode);
+    printf("College_Code:%s\n",entry.ccode);
+    
+    scanf("%s",&entry.cname);
+    printf("College_Name:%s\n",entry.cname);
+    
+    scanf("%d",&entry.yoe);
+    printf("Establishment_Year:%d\n",entry.yoe);
+    
+    scanf("%d",&entry.nocourse);
+    printf("No.of courses:%d\n",entry.nocourse);
+    
+    printf("\n");
+    printf("Find the course details below...\n");
+    printf("\n");
+    
+    int i=1;
+    while(entry.nocourse--){
+        printf("%d]\n",i);
+        scanf("%s",&details.course_name);
+        printf("C_Name:%s\n",details.course_name);
+        
+        scanf("%f",&details.dur);
+        printf("C_Duration:%.1f\n",details.dur);
+        
+        scanf("%d",&details.nostudents);
+        printf("No.of students:%d\n",details.nostudents);
+        
+        i++;
+    }
+
+    return 0;
+}
