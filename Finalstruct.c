@@ -38,6 +38,8 @@ int main(){
     
 
 /****************part 2 input*****************/
+    
+    
     int temp=entry1.number_courses;
     
     struct course_details storing_data[temp];
@@ -57,6 +59,8 @@ int main(){
     printf("\n");
     
     }
+    
+    
 /****************output section***************/
     printf("\t \t \t \t \t \t \t***COLLEGE DETAILS*** \n");
     printf("\n");
