@@ -61,7 +61,8 @@
  ​ ​scanf​(​"​%d​"​,&storing_data[i].​number_of_student​); 
  ​    ​printf​(​"​\n​"​); 
  ​     
- ​    } 
+ ​    }  
+ 
  ​/*​***************output section**************​*/ 
 
 
